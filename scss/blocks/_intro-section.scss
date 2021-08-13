@@ -1,0 +1,262 @@
+// INTRO SECTION
+.wrapper-intro-section {
+  background-color: #F2F2F2;;
+  width: 100%;
+}
+
+.intro-section {
+  padding-bottom: 170px;  
+  background-image: url('../../images/bg-image.png');
+  background-size: 820px 855px;
+  background-repeat: no-repeat;
+  background-position: top -75px right 0px;
+}
+
+.intro {
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  // padding-left: 160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro__content {
+  width: 447px;
+  margin-top: 170px;
+}
+
+.intro__title {
+  margin: 0;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: $color-text-dark;
+}
+
+.intro__text {
+  margin-top: 24px;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: $color-text;
+}
+
+.intro__button { 
+
+}
+
+.beckground {
+}
+
+.beckground-image {
+
+}
+
+.beckground-phones {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 620px;
+  height: 900px;
+}
+
+@include breakpoint-down(1160px) {
+  .intro-section {
+    padding-bottom: 55px;
+    background-size: 492px 513px;
+    background-position: top -53px right 0;
+  }
+
+  .intro__content {
+    margin-top: 40px;
+  }
+
+  .beckground-phones {
+    width: 372px;
+    height: 540px;
+    right: 0px;
+  }
+}
+
+@include breakpoint-down(900px) {
+  .intro-section {
+    background-size: 390px 410px;
+    background-position: top -33px right 0;
+  }
+
+  .background-image {
+    display: none;
+  }
+
+  .intro__content {
+    margin-top: 30px;
+    width: 330px;
+  }
+
+  .intro__title {
+    margin: 0;
+    font-weight: 100;
+    font-size: 38px;
+    line-height: 52px;
+    letter-spacing: -1px;
+    color: $color-text-dark;
+  }
+  
+  .intro__text {
+    margin-top: 18px;
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    color: $color-text;
+  }
+
+  .beckground-phones {
+    width: 335px;
+    height: 486px;
+  }
+}
+
+@include breakpoint-down(725px) {
+  .intro-section {
+    background-size: 100% 70%;
+    background-position: top 0px right 0;
+    background-image: url("../../images/bg-phones2.png"), url('../../images/bg-image.png');
+    
+  }
+
+  .intro__content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 720px;
+    width: 530px;
+    text-align: center;
+  }
+
+  .intro__title {
+    margin: 0;
+    font-weight: 100;
+    font-size: 38px;
+    line-height: 52px;
+    letter-spacing: -1px;
+    color: $color-text-dark;
+  }
+  
+  .intro__text {
+    margin-top: 18px;
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    color: $color-text;
+  }
+
+  .beckground-phones {
+    display: none;
+  }
+
+  .background-image {
+    display: block;
+    width: 378px;
+    height: 460px;
+  }
+}
+
+@include breakpoint-down(640px) {
+  .intro-section {
+    background-size: 100% 70%;
+  }
+
+  .intro__content {
+    margin-top: 680px;
+    width: 470px;
+  }
+
+  .intro__title {
+    font-weight: 100;
+    font-size: 32px;
+    line-height: 46px;
+  }
+  
+  .intro__text {
+    margin-top: 14px;
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@include breakpoint-down(510px) {
+  .intro-section {
+    background-size: 100% 70%;
+    padding-bottom: 20px;
+  }
+
+  .intro__content {
+    margin-top: 470px;
+  }
+
+  .intro__title {
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 38px;
+  }
+  
+  .intro__text {
+    margin-top: 12px;
+    margin-bottom: 28px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@include breakpoint-down(430px) {
+  .intro-section {
+    background-size: 100% 75%;
+    padding-bottom: 20px;
+  }
+
+  .intro__content {
+    margin-top: 470px;
+  }
+
+  .intro__title {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .intro__text {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+@include breakpoint-down(360px) {
+  .intro-section {
+    background-size: 100% 70%;
+    padding-bottom: 10px;
+  }
+
+  .intro__content {
+    margin-top: 380px;
+  }
+
+  .intro__title {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .intro__text {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+}

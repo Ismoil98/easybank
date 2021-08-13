@@ -1,0 +1,153 @@
+.why-section {
+  background-color: #F4F5F7;
+}
+
+.why-section__container {
+
+}
+
+.why {
+  padding-top: 96px;
+  padding-bottom: 94px;
+}
+
+.why__content {
+  // width: 635px;
+}
+
+.why__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #2D314D;
+}
+
+.why__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: #9597A5;
+  margin-bottom: 72px;
+}
+
+.why-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.why-items {
+  width: 255px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-image {
+  width: 72px;
+  height: 72px;
+  display: block;
+}
+
+.why-info {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  color: #2D314D;
+}
+
+.why-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: $color-text;
+}
+
+@include breakpoint-down(800px) {
+  .why__title {
+    margin-bottom: 12px;
+    font-size: 42px;
+    line-height: 58px;
+    text-align: center;
+  }
+
+  .why__text {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .why {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+@include breakpoint-down(580px) {
+  .why__title {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .why__text {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 40px;
+  }
+
+  .why {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .why-info {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .why-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .why-list {
+    display: block;
+  }
+
+  .why-items {
+    width: 255px;
+    margin-bottom: 20px;
+  }
+}
+
+@include breakpoint-down(340px) {
+  .why__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .why__text {
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 30px;
+  }
+
+  .why {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
